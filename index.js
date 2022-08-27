@@ -74,9 +74,7 @@ app.post('/visitor-sign-out', async (req, res) => {
 app.use(function (req, res, next) {
   console.log('Time:', Date.now())
   next()
-})
-
-
+});
 
 const listener = app.listen(process.env.PORT || 0, () => {
   console.log(`Listening on port ${listener.address().port}`);
